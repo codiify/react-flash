@@ -11,7 +11,8 @@ const App = () => {
       colorful: true,
       icon: true,
       position: 'top-right',
-      progressBarColor: '#00FF00', // Example color
+      progressBar: true,
+      progressBarColor: '#00FF00',
     });
   };
 
