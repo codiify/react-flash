@@ -1,26 +1,25 @@
-import React from 'react';
-import { useToast } from './components/ToastProvider';
+import logo from './logo.svg';
+import './App.css';
 
-const App = () => {
-  const { addToast } = useToast();
-
-  const showToast = () => {
-    addToast('success', 'This is a success message!', {
-      timeout: 3000,
-      animationSpeed: '0.5s',
-      colorful: true,
-      icon: true,
-      position: 'top-right',
-      progressBar: true,
-      progressBarColor: '#00FF00',
-    });
-  };
-
+function App() {
   return (
-      <div>
-        <button onClick={showToast}>Show Toast</button>
-      </div>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
