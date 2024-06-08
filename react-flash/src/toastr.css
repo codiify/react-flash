@@ -1,0 +1,67 @@
+.toast {
+    position: relative;
+    width: 316px;
+    display: flex;
+    align-items: start;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 16px 12px;
+    transition: opacity 0.3s ease;
+}
+
+.toast-icon {
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+.toast-top-right {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    animation: slideInRight 0.5s forwards;
+}
+
+.toast-top-left {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    animation: slideInLeft 0.5s forwards;
+}
+
+.toast-bottom-right {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    animation: slideInRight 0.5s forwards;
+}
+
+.toast-bottom-left {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    animation: slideInLeft 0.5s forwards;
+}
+
+.toast-top-center {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideInTop 0.5s forwards;
+}
+
+.toast-bottom-center {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: slideInBottom 0.5s forwards;
+}
+
